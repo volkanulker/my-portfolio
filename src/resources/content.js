@@ -44,6 +44,11 @@ const social = [
     link: "https://linkedin.com/in/volkan-ulker",
   },
   {
+    name: "Medium",
+    icon: "medium",
+    link: "https://medium.com/@vlkn-ulkr",
+  },
+  {
     name: "Email",
     icon: "email",
     link: `mailto:${person.email}`,
@@ -104,41 +109,48 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "OSF Digital",
+        timeframe: "November 2024 - Present",
+        role: "Back End Developer (Intermediate 2)",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Participated in the complete rewrite of Vilebrequin's project, a French luxury swimwear and clothing brand, 
+            using Salesforce Commerce Cloud (SFCC) and Salesforce PWA Kit. 
+            This involved ensuring seamless communication between the Back-End and Front-End, 
+            supporting team members with limited experience in the Salesforce PWA Kit, identifying and implementing solutions, 
+            and presenting these solutions to the client.
           </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            src: "/images/projects/vilebrequin/vilebrequin-home.jpg",
+            alt: "Vilebrequin Home Page",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/vilebrequin/vilebrequin-plp.jpg",
+            alt: "Vilebrequin PLP Page",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/vilebrequin/vilebrquin-pdp.jpg",
+            alt: "Vileberquin PDP Page",
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "OSF Digital",
+        timeframe: "July 2023 - November 2024",
+        role: "Back End Developer (Junior - Intermediate 1)",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            To be a key member in the development of the Sarenza Spain and Sarenza France websites from scratch to their current state using the Salesforce PWA kit, 
+            contributing to every aspect of the project's back-end, proposing solutions to problems, creating documentation, and collaborating with team members.
           </>,
         ],
         images: [],
@@ -160,8 +172,8 @@ const about = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        title: "Skill Title",
+        description: <>Skill Description.</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
@@ -178,19 +190,19 @@ const about = {
           },
         ],
       },
-      {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
+      // {
+      //   title: "Next.js",
+      //   description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+      //   // optional: leave the array empty if you don't want to display images
+      //   images: [
+      //     {
+      //       src: "/images/projects/project-01/cover-04.jpg",
+      //       alt: "Project image",
+      //       width: 16,
+      //       height: 9,
+      //     },
+      //   ],
+      // },
     ],
   },
 };
