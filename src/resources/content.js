@@ -57,7 +57,6 @@ const social = [
 
 const home = {
   path: "/",
-  image: "/images/og/home.jpg",
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
@@ -213,7 +212,7 @@ const about = {
     institutions: [
       {
         name: "Dokuz Eylül University",
-        description: <>Computer Engineering, GPA 3.08</>,
+        description: <>Computer Engineering</>,
       }
     ],
   },
@@ -240,19 +239,6 @@ const about = {
           },
         ],
       },
-      // {
-      //   title: "Next.js",
-      //   description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-      //   // optional: leave the array empty if you don't want to display images
-      //   images: [
-      //     {
-      //       src: "/images/projects/project-01/cover-04.jpg",
-      //       alt: "Project image",
-      //       width: 16,
-      //       height: 9,
-      //     },
-      //   ],
-      // },
     ],
   },
 };
