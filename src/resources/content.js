@@ -1,20 +1,21 @@
 import { Logo } from "@once-ui-system/core";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Volkan",
+  lastName: "Ulker",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Back End Developer",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "vlkn-ulkr@hotmail.com",
+  timeZonelocation: "Europe/Istanbul", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  locationToDisplay: "Turkey/Izmir", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["Turkish", "English"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
@@ -28,19 +29,19 @@ const social = [
   // Links are automatically displayed.
   // Import new icons in /once-ui/icons.ts
   {
-    name: "GitHub",
+    name: "Personal Account",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/volkanulker",
+  },
+  {
+    name: "Work Account",
+    icon: "github",
+    link: "https://github.com/Volkan-Ulker",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://linkedin.com/in/volkan-ulker",
   },
   {
     name: "Email",
@@ -55,16 +56,16 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Building bridges between ecommerce and code</>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
+    title: <>Recent project: <strong className="ml-4">Vilebrequin</strong></>,
+    href: "https://www.vilebrequin.com/eu/en/home",
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon="/trademarks/wordmark-dark.svg" style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Volkan, a Back End Developer at OSF Digital, where I develop excellent
+      ecommerce solutions.
     </>
   ),
 };
@@ -73,7 +74,7 @@ const about = {
   path: "/about",
   label: "About",
   title: `About – ${person.name}`,
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  description: `Meet ${person.name}, ${person.role} from ${person.locationToDisplay}`,
   tableOfContent: {
     display: true,
     subItems: false,
@@ -82,7 +83,7 @@ const about = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
@@ -90,9 +91,11 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Volkan is a dynamic Back End Developer with over three years of experience, excelling in creating robust solutions within the Salesforce Commerce Cloud environment. 
+        Proven expertise in Node.js, React, and REST APIs, driving projects from inception to completion while enhancing team collaboration and productivity. 
+        Adept at rewriting and optimizing applications, ensuring seamless integration between back-end and front-end components to meet client specifications. 
+        Committed to continuous improvement and delivering high-quality code that elevates user experience. 
+        Passionate about leveraging technical skills to tackle complex challenges and contribute to innovative web solutions.
       </>
     ),
   },
@@ -144,16 +147,12 @@ const about = {
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Study",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
-      },
+        name: "Dokuz Eylül University",
+        description: <>Computer Engineering, GPA 3.08</>,
+      }
     ],
   },
   technical: {
