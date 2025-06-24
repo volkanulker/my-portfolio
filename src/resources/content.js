@@ -58,6 +58,7 @@ const social = [
 const home = {
   path: "/",
   label: "Home",
+  image: "/images/og/home.jpg",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
   headline: <>Building bridges between ecommerce and code</>,
@@ -207,7 +208,7 @@ const about = {
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
+    display: false, // set to false to hide this section
     title: "Study",
     institutions: [
       {
