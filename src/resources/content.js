@@ -11,7 +11,7 @@ const person = {
   email: "vlkn-ulkr@hotmail.com",
   timeZonelocation: "Europe/Istanbul", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   locationToDisplay: "Turkey/Izmir", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["Turkish", "English"], // optional: Leave the array empty if you don't want to display languages
+  languages: ["Turkish (Native)", "English (Proficient)"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -96,7 +96,7 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Volkan is a dynamic Back End Developer with over three years of experience, excelling in creating robust solutions within the Salesforce Commerce Cloud environment. 
+        I'm a Back End Developer with over three years of experience, excelling in creating robust solutions within the Salesforce Commerce Cloud environment. 
         Proven expertise in Node.js, React, and REST APIs, driving projects from inception to completion while enhancing team collaboration and productivity. 
         Adept at rewriting and optimizing applications, ensuring seamless integration between back-end and front-end components to meet client specifications. 
         Committed to continuous improvement and delivering high-quality code that elevates user experience. 
@@ -153,7 +153,57 @@ const about = {
             contributing to every aspect of the project's back-end, proposing solutions to problems, creating documentation, and collaborating with team members.
           </>,
         ],
-        images: [],
+        images: [
+          {
+            src: "/images/projects/sarenza/sarenza-home.jpg",
+            alt: "Sarenza Home Page",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/sarenza/sarenza-plp.jpg",
+            alt: "Sarenza PLP Page",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/sarenza/sarenza-pdp.jpg",
+            alt: "Sarenza PDP Page",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        company: "OSF Digital",
+        timeframe: "May 2022 - June 2023",
+        role: "Back End Developer (Junior)",
+        achievements: [
+          <>
+            Developed features for Moleskine, one of Italy's most renowned luxury notebook manufacturers, 
+            by implementing personalized product features, setting up REST API connections, fixing bugs, and improving code quality.
+          </>,
+        ],
+        images: [
+          {
+            src: "/images/projects/moleskine/moleskine-home.jpg",
+            alt: "Sarenza Home Page",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/moleskine/moleskine-plp.jpg",
+            alt: "Sarenza PLP Page",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/moleskine/moleskine-pdp.jpg",
+            alt: "Sarenza PDP Page",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
     ],
   },
@@ -168,7 +218,7 @@ const about = {
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
+    display: false, // set to false to hide this section
     title: "Technical skills",
     skills: [
       {
