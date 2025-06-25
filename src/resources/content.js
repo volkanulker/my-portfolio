@@ -61,7 +61,7 @@ const home = {
   image: "/images/og/home.jpg",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between ecommerce and code</>,
+  headline: <>Building bridges between e-commerce and software</>,
   featured: {
     display: true,
     title: <>Recent project: <strong className="ml-4">Vilebrequin</strong></>,
@@ -69,8 +69,7 @@ const home = {
   },
   subline: (
     <>
-      I'm Volkan, a Back End Developer at OSF Digital, where I develop excellent
-      ecommerce solutions.
+      I'm Volkan, a Back End Developer at OSF Digital, where I develop excellent and scalable e-commerce solutions.
     </>
   ),
 };
