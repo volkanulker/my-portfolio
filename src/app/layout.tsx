@@ -94,6 +94,10 @@ export default async function RootLayout({
             `,
           }}
         />
+        <link rel="apple-touch-icon" sizes="180x180" href="/src/app/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/src/app/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/src/app/favicon-16x16.png" />
+        <link rel="manifest" href="/src/app/site.webmanifest" />
       </head>
       <Providers>
         <Column as="body" background="page" fillWidth style={{minHeight: "100vh"}} margin="0" padding="0" horizontal="center">
