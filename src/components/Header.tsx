@@ -184,7 +184,7 @@ export const Header = () => {
             gap="20"
           >
             <Flex s={{ hide: true }}>
-              {display.time && <TimeDisplay timeZone={person.timeZonelocation} />}
+              {display.time && <TimeDisplay timeZone={person.timeZoneLocation} />}
             </Flex>
           </Flex>
         </Flex>
