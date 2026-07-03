@@ -1,32 +1,38 @@
 export type CompanyLogo = {
-  fileName: string;
+  darkFileName: string;
+  lightFileName: string;
   label: string;
   url: string;
 };
 
 export const companyLogos: CompanyLogo[] = [
   {
-    fileName: "tissot.png",
+    darkFileName: "tissot-dark.png",
+    lightFileName: "tissot-light.png",
     label: "Tissot",
     url: "https://www.tissotwatches.com/",
   },
   {
-    fileName: "myorigines.png",
+    darkFileName: "myorigines-dark.png",
+    lightFileName: "myorigines-light.png",
     label: "MyOrigines",
     url: "https://www.my-origines.com/",
   },
   {
-    fileName: "vilebrequin.png",
+    darkFileName: "vilebrequin-dark.png",
+    lightFileName: "vilebrequin-light.png",
     label: "Vilebrequin",
     url: "https://www.vilebrequin.com/",
   },
   {
-    fileName: "sarenza.png",
+    darkFileName: "sarenza-dark.png",
+    lightFileName: "sarenza-light.png",
     label: "Sarenza",
     url: "https://www.sarenza.com/",
   },
   {
-    fileName: "moleskine.png",
+    darkFileName: "moleskine-dark.png",
+    lightFileName: "moleskine-light.png",
     label: "Moleskine",
     url: "https://www.moleskine.com/",
   },

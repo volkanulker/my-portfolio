@@ -2,11 +2,11 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { Column, Row, Text } from "@once-ui-system/core";
-
-import { companyLogos } from "@/app/configuration/companyLogos"; 
+import { Column, Row, Text, useTheme } from "@once-ui-system/core";
+import { companyLogos } from "@/app/configuration/companyLogos";
 
 export function CompanyLogos() {
+  const { theme } = useTheme();
   const [hoveredLogo, setHoveredLogo] = useState<string | null>(null);
 
   if (companyLogos.length === 0) {
@@ -27,16 +27,17 @@ export function CompanyLogos() {
           flexWrap: "wrap",
         }}
       >
-        {companyLogos.map(({ fileName, label, url }) => {
-          const isHovered = hoveredLogo === fileName;
+        {companyLogos.map(({ darkFileName, lightFileName, label, url }) => {
+          const imageFileName = theme === "dark" ? darkFileName : lightFileName;
+          const isHovered = hoveredLogo === label;
 
           return (
             <a
-              key={fileName}
+              key={label}
               href={url}
               target="_blank"
               rel="noreferrer"
-              onMouseEnter={() => setHoveredLogo(fileName)}
+              onMouseEnter={() => setHoveredLogo(label)}
               onMouseLeave={() => setHoveredLogo(null)}
               style={{
                 display: "inline-flex",
@@ -49,7 +50,7 @@ export function CompanyLogos() {
               }}
             >
               <Image
-                src={`/images/logos/${fileName}`}
+                src={`/images/logos/${imageFileName}`}
                 alt={`${label} logo`}
                 width={180}
                 height={108}
