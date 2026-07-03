@@ -30,12 +30,6 @@ const social: Social = [
     essential: true,
   },
   {
-    name: "Work Account",
-    icon: "github",
-    link: "https://github.com/Volkan-Ulker",
-    essential: true,
-  },
-  {
     name: "LinkedIn",
     icon: "linkedin",
     link: "https://linkedin.com/in/volkan-ulker",
@@ -103,7 +97,7 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-Back End Engineer with over three years of experience, excelling in creating robust solutions within the Salesforce Commerce Cloud environment. Proven expertise in Node.js, React, and REST APIs, driving projects from scratch to completion while enhancing team collaboration and productivity.
+Back End Engineer with 4+ years of experience, excelling in creating robust solutions within the Salesforce Commerce Cloud environment. Proven expertise in Node.js, React, and REST APIs, driving projects from scratch to completion while enhancing team collaboration and productivity.
 <br />
 <br />
 Experienced at rewriting and optimizing applications, ensuring seamless integration between back-end and front-end components to meet client specifications.
@@ -123,7 +117,7 @@ Committed to continuous improvement and delivering high-quality code that elevat
         role: "Back End Engineer (Senior 1)",
         achievements: [
           <>
-           Develop features using Salesforce Commerce Cloud (SFCC) and SFRA for the Swiss luxury watchmaker Tissot.
+           Maintaining and enhancing the codebase for Swiss luxury watchmaker Tissot, resolving issues in payment systems (Adyen), addressing new client requirements, maintaining close communication with the client, proposing solutions, preparing technical documentation, and developing many features.
           </>,
         ],
         images: [
@@ -149,12 +143,46 @@ Committed to continuous improvement and delivering high-quality code that elevat
         ],
       },
       {
+        company: "MyOrigines via OSF Digital",
+        timeframe: "August 2025 - January 2026",
+        role: "Back End Engineer (Senior 1)",
+        achievements: [
+          <>
+           As the only Back-End Engineer, I took full ownership of the complete refactoring and development of the entire checkout flow—from the cart to order confirmation—for the French beauty brand MyOrigines. Following the successful checkout refactoring, MyOrigines selected OSF as its technology partner, and new agreements were signed for additional features and ongoing maintenance.
+          </>,
+        ],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+          {
+            src: "/images/projects/myorigines/myorigines-cart.png",
+            alt: "MyOrigines Cart Page",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/myorigines/myorigines-shipping.png",
+            alt: "MyOrigines Shipping Page",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/myorigines/myorigines-payment-step.png",
+            alt: "MyOrigines Payment Step Page",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
         company: "Vilebrequin via OSF Digital",
         timeframe: "November 2024 - August 2025",
         role: "Back End Engineer (Intermediate 2)",
         achievements: [
           <>
            Participated in the complete rewrite of Vilebrequin's project, a French luxury swimwear and clothing brand, using Salesforce Commerce Cloud (SFCC) and Salesforce PWA Kit. This involved ensuring seamless communication between the Back-End and Front-End, supporting team members with limited experience in the Salesforce PWA Kit, identifying and implementing solutions, and presenting these solutions to the client.
+          </>,
+          <>
+          This project became one of the key contributions that enabled the company to earn the Salesforce Implementation Expert Badge for Composable.
           </>,
         ],
         images: [
@@ -187,6 +215,10 @@ Committed to continuous improvement and delivering high-quality code that elevat
           <>
             To be a key member in the development of the Sarenza Spain and Sarenza France applications and business flows from scratch to their current state using the Salesforce PWA kit and Salesforce Commerce Cloud(SFCC), contributing to every aspect of the project's back-end, proposing solutions to problems, creating documentation, and collaborating with team members.
           </>,
+          <>
+            This project was particularly exceptional, as SFCC Headless was still in its early stages and it was one of the company’s first major headless implementations, delivered with a high level of customer satisfaction.
+          </>
+          ,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
