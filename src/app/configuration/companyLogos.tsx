@@ -13,7 +13,7 @@ export const companyLogos: CompanyLogo[] = [
   {
     fileName: "myorigines.png",
     label: "MyOrigines",
-    url: "https://www.myorigines.com/",
+    url: "https://www.my-origines.com/",
   },
   {
     fileName: "vilebrequin.png",
