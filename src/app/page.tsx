@@ -12,6 +12,7 @@ import {
   Line,
 } from "@once-ui-system/core";
 import { home, about, person, baseURL, routes } from "@/resources";
+import { CompanyLogos } from "@/components/CompanyLogos";
 import { Projects } from "@/components/work/Projects";
 import { Posts } from "@/components/blog/Posts";
 
@@ -96,6 +97,9 @@ export default function Home() {
                 {about.title}
               </Row>
             </Button>
+          </RevealFx>
+          <RevealFx paddingTop="12" delay={0.4} horizontal="center" paddingLeft="12">
+            <CompanyLogos />
           </RevealFx>
         </Column>
       </Column>
