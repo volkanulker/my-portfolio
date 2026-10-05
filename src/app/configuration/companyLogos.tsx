@@ -7,6 +7,12 @@ export type CompanyLogo = {
 
 export const companyLogos: CompanyLogo[] = [
   {
+    darkFileName: "snipes-dark.png",
+    lightFileName: "snipes-light.png",
+    label: "Snipes",
+    url: "https://www.snipesusa.com/",
+  },
+  {
     darkFileName: "tissot-dark.png",
     lightFileName: "tissot-light.png",
     label: "Tissot",

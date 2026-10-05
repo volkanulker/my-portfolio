@@ -241,7 +241,7 @@ export default function About() {
                             key={index}
                             border="neutral-medium"
                             radius="m"
-                            minWidth={image.width}
+                            width={image.width}
                             height={image.height}
                           >
                             <Media

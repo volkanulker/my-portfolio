@@ -63,15 +63,15 @@ const home: Home = {
         <strong className="ml-4">Recent Project</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
-          Tissot
+          Snipes USA
         </Text>
       </Row>
     ),
-    href: "https://www.tissotwatches.com/en-us",
+    href: "https://www.snipesusa.com/",
   },
   subline: (
     <>
-      I'm Volkan, a Back End Engineer at <Text as="span" size="xl" weight="strong">OSF Digital</Text>, where I develop excellent and scalable e-commerce solutions.
+      I'm Volkan, a Back End Engineer at <Text as="span" size="xl" weight="strong">Snipes USA</Text>, where I develop excellent and scalable e-commerce solutions.
     </>
   ),
 };
@@ -112,8 +112,38 @@ Committed to continuous improvement and delivering high-quality code that elevat
     title: "Work Experience",
     experiences: [
       {
+        company: "SNIPES USA",
+        timeframe: "July 2026 - Present",
+        role: "Back End Engineer",
+        achievements: [
+          <>
+           Responsible for the end-to-end development and maintenance of Snipes USA's e-commerce platform, including building new features, resolving production issues, and proposing technical improvements. Partnered with business stakeholders to translate requirements into effective solutions and advance the platform's long-term goals.
+          </>,
+        ],
+        images: [
+          {
+            src: "/images/projects/snipes/snipes-home.jpg",
+            alt: "Snipes Home Page",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/snipes/snipes-plp.jpg",
+            alt: "Snipes PLP Page",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/snipes/snipes-pdp.jpg",
+            alt: "Snipes PDP Page",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
         company: "Tissot via OSF Digital",
-        timeframe: "August 2025 - Present",
+        timeframe: "August 2025 - July 2026",
         role: "Back End Engineer (Senior 1)",
         achievements: [
           <>
@@ -121,7 +151,6 @@ Committed to continuous improvement and delivering high-quality code that elevat
           </>,
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
           {
             src: "/images/projects/tissot/tissot-home.jpg",
             alt: "Tissot Home Page",
@@ -152,7 +181,6 @@ Committed to continuous improvement and delivering high-quality code that elevat
           </>,
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
           {
             src: "/images/projects/myorigines/myorigines-cart.png",
             alt: "MyOrigines Cart Page",
@@ -186,7 +214,6 @@ Committed to continuous improvement and delivering high-quality code that elevat
           </>,
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
           {
             src: "/images/projects/vilebrequin/vilebrequin-home.jpg",
             alt: "Vilebrequin Home Page",
@@ -221,7 +248,6 @@ Committed to continuous improvement and delivering high-quality code that elevat
           ,
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
           {
             src: "/images/projects/sarenza/sarenza-home.jpg",
             alt: "Sarenza Home Page",
@@ -252,7 +278,6 @@ Committed to continuous improvement and delivering high-quality code that elevat
           </>,
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
           {
             src: "/images/projects/moleskine/moleskine-home.jpg",
             alt: "Moleskine Home Page",
